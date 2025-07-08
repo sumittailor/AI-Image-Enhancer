@@ -624,7 +624,9 @@
         const noiseValue = document.getElementById('noiseValue');
         const sharpness = document.getElementById('sharpness');
         const sharpnessValue = document.getElementById('sharpnessValue');
-
+// DeepAI API Key - IMPORTANT: In production, don't expose this in frontend code
+        // Instead, create a backend proxy to make the API calls
+        const DEEPAI_API_KEY = 'your-api-key-here'; // Replace with your actual key
         // Event Listeners
         uploadArea.addEventListener('click', () => imageInput.click());
         uploadArea.addEventListener('dragover', (e) => {
