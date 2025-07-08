@@ -141,7 +141,7 @@
 
         // DeepAI API Key - IMPORTANT: In production, don't expose this in frontend code
         // Instead, create a backend proxy to make the API calls
-        const DEEPAI_API_KEY = '8365ab74-b214-4a20-9cb5-24755b97d91d'; // Replace with your actual key
+        const DEEPAI_API_KEY = 'your-api-key-here'; // Replace with your actual key
 
         // Event Listeners
         uploadArea.addEventListener('click', () => imageInput.click());
@@ -205,7 +205,7 @@
                 const response = await fetch('https://api.deepai.org/api/torch-srgan', {
                     method: 'POST',
                     headers: {
-                        'api-key': 8365ab74-b214-4a20-9cb5-24755b97d91d
+                        'api-key': DEEPAI_API_KEY
                     },
                     body: formData
                 });
